@@ -15,7 +15,7 @@ class IsolateOne {
 
     //Response listener
     _receivePort.listen(
-      (data) {
+      (data) async {
         if (data == null) {
           print('Oh nooo! Data not received!');
           //stop();
